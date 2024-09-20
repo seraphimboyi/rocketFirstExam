@@ -162,7 +162,7 @@ body {
 }
 
 header {
-  background: url("../img/banner.png");
+  background: url("/img/banner.png");
   height: 958px;
   background-size: cover;
   background-position: center;
@@ -214,6 +214,13 @@ header section ul li {
   text-align: center;
   padding: 10px 0px;
   margin-bottom: 40px;
+}
+@media (max-width: 420px) {
+  .contentTop img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 .contentTop section text {
   text-align: center;
@@ -377,6 +384,11 @@ li::before {
   padding-bottom: 48px;
   padding-top: 16px;
 }
+@media (max-width: 420px) {
+  .card-container img {
+    max-width: 300px;
+  }
+}
 
 .card-container-mid {
   display: flex;
@@ -389,6 +401,11 @@ li::before {
 @media (max-width: 1200px) {
   .card-container-mid {
     flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .card-container-mid img {
+    max-width: 300px;
   }
 }
 .card-container-mid p {

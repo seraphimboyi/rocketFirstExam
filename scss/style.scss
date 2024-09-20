@@ -212,6 +212,13 @@ header {
     padding: 10px 0px;
     margin-bottom: 40px;
   }
+  @include phone{
+    img {
+      max-width: 300px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
   section {
     text {
       text-align: center;
@@ -357,6 +364,11 @@ li::before {
     padding-bottom: 48px;
     padding-top: 16px;
   }
+  @include phone{
+    img {
+      max-width: 300px;
+    }
+  }
 }
 .card-container-mid {
   display: flex;
@@ -367,7 +379,11 @@ li::before {
   @include pad-l {
     flex-direction: column;
   }
-
+  @include phone{
+    img {
+      max-width: 300px;
+    }
+  }
   p {
     font-size: 20px;
     padding-bottom: 48px;
